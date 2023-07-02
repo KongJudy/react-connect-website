@@ -6,7 +6,6 @@ import ContactPage from './pages/ContactPage';
 import JournalPage from './pages/JournalPage';
 import HomePage from './pages/HomePage';
 import DonatePage from './pages/DonatePage';
-import ConnectionsPage from './pages/ConnectionsPage';
 
 import './App.css';
 
@@ -17,7 +16,6 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='journal' element={<JournalPage />} />
-        <Route path='connections' element={<ConnectionsPage />} />
         <Route path='donate' element={<DonatePage />} />
         <Route path='contact' element={<ContactPage />} />
       </Routes>

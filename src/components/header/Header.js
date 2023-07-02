@@ -66,20 +66,6 @@ const Header = () => {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className='nav-link' to='/connections'>
-              <img
-                className='changeImg'
-                src={connections}
-                alt='connections page button'
-              />
-              <img
-                className='changeImg'
-                src={connectionsW}
-                alt='connections page button'
-              />
-            </NavLink>
-          </NavItem>
-          <NavItem>
             <NavLink className='nav-link' to='/donate'>
               <img
                 className='changeImg'
