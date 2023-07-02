@@ -1,0 +1,18 @@
+.subheader {
+  background-color: #c7bdb12b;
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-shadow: -1px 0px 2px rgba(62, 62, 62, 0.645);
+}
+
+.breadcrumbDiv {
+  padding-top: 8px;
+  margin-right: 24px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.subheader .link {
+  text-decoration: none;
+  color: #0e2224;
+}
