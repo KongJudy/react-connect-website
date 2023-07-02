@@ -1,0 +1,56 @@
+.connectBtn {
+  background-color: #fff;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 30%;
+  outline: 2px solid #9a9a9a83;
+  outline-offset: 2px;
+  box-shadow: -2px 1px 3px 1px rgba(0, 0, 0, 0.584);
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.counter {
+  color: #0e2224;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  top: 6px;
+  right: 38px;
+  height: 30px;
+  width: 30px;
+  background-color: #ede5d5d0;
+  padding: 2px;
+  border-radius: 30%;
+}
+
+.connectBtn:focus {
+  background-color: white;
+}
+
+.connectBtn:hover {
+  background-color: #1aca9e;
+}
+
+.connectBtn .changeImg img {
+  position: absolute;
+  padding: 1px;
+  top: 3px;
+  left: 9px;
+  width: 70%;
+  height: 70%;
+}
+
+/* hides second image */
+.connectBtn .changeImg:nth-of-type(2) {
+  display: none;
+}
+
+.connectBtn:hover .changeImg:nth-of-type(1) {
+  display: none;
+}
+
+.connectBtn:hover .changeImg:nth-of-type(2) {
+  display: block;
+}
