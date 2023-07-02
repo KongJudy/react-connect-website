@@ -1,0 +1,98 @@
+.bgImage {
+  opacity: 50%;
+  position: relative;
+  height: 45%;
+}
+
+.cardTitle {
+  font-family: 'Caveat', cursive, sans-serif;
+  color: #30302f;
+  text-shadow: -1px 0px 1px rgb(3, 19, 10);
+  border-radius: 5px;
+  padding-left: 4px;
+  display: inline-block;
+  font-weight: 500;
+  z-index: -1;
+}
+
+.card {
+  box-shadow: -2px 0px 2px 2px rgba(0, 0, 0, 0.214);
+  background-color: #ede5d5;
+}
+
+.cardBody {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #0e2224;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.readMoreBtn {
+  position: absolute;
+  bottom: 70px;
+  right: 28px;
+  padding: 0;
+  width: 94px;
+  background-color: #1aca9e;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.readMoreBtn:hover {
+  background-color: #fff;
+  color: #2fcd90;
+  box-shadow: 0px 4px 4px 2px #3d3d3d56;
+}
+
+.readMoreBtn:focus {
+  background-color: #2fcd90;
+  color: #fff;
+  box-shadow: 0px 2px 2px 2px #3d3d3d83;
+}
+
+.readMore {
+  font-size: 1.2rem;
+  font-family: 'Caveat', cursive, sans-serif;
+}
+
+.card-footer {
+  padding: 0;
+  height: 58px;
+  width: 100%;
+  position: relative;
+}
+
+.counter {
+  padding-top: 2px;
+  padding-right: 4px;
+  font-weight: 700;
+  position: absolute;
+  top: 14px;
+  right: 62px;
+}
+
+.userNameLocation {
+  font-family: 'Caveat', cursive, sans-serif;
+  position: absolute;
+  display: inline-block;
+  top: 13px;
+  left: 6px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.userNameLocation:hover {
+  text-shadow: 1px 1px 2px rgba(62, 62, 62, 0.645);
+  background-color: #ffffff24;
+  cursor: pointer;
+}
+
+.postConnectBtn {
+  position: absolute;
+  top: 10px;
+  right: 52px;
+}
