@@ -8,6 +8,7 @@ export const selectDonationById = (id) => {
   return DONATIONS.find((donation) => donation.id === id);
 };
 
+
 /*
 export const selectFeaturedDonation = () => {
   return DONATIONS.filter((donation) => donation.featured === 'true');

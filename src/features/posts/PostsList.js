@@ -1,10 +1,10 @@
 import { Container, Col, Row } from 'reactstrap';
 import PostCard from './PostCard';
 import './postCard.css';
-import { selectAllPosts } from '../posts/postsSlice';
+import { selectAllPosts } from './postsSlice';
 
 const PostsList = () => {
-  const posts = selectAllPosts;
+  const posts = selectAllPosts();
 
   return (
     <Container>

@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <>
       <div>
-        <SubHeader current='home' />
+        <SubHeader current="home" />
       </div>
       <Container>
         <PostsList />

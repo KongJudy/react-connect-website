@@ -4,23 +4,23 @@ import { selectAllDonations } from './donationsSlice';
 
 const DonationsList = ({ setDonationId }) => {
   const donations = selectAllDonations();
-
+  
   return (
-    <Row className='mx-auto'>
+    <Row className="mx-auto">
       {donations.map((donation) => {
         return (
-          <Col
+          <Col 
             md='5'
-            className='m-4'
+            className="m-4"
             key={donation.id}
             onClick={() => setDonationId(donation.id)}
           >
             <DonationCard donation={donation} />
           </Col>
-        );
+        )
       })}
     </Row>
   );
-};
+}
 
 export default DonationsList;

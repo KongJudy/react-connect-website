@@ -5,21 +5,21 @@ import DonationDetail from '../features/donations/DonationDetail';
 import DonationsList from '../features/donations/DonationsList';
 import { selectDonationById } from '../features/donations/donationsSlice';
 
-const DonationPage = () => {
+const DonatePage = () => {
   const [donationId, setDonationId] = useState(0);
-  const selectedDonation = selectDonationById(donationId);
+  const selectedDonation = selectDonationById(donationId)
 
   return (
     <>
       <div>
-        <SubHeader current='donate' />
+        <SubHeader current="donate" />
       </div>
-      <Container className='mx-auto'>
+      <Container className="mx-auto">
         <Row>
-          <Col sm='12' md='12' lg='7'>
+          <Col sm="12" md="12" lg="7">
             <DonationsList setDonationId={setDonationId} />
           </Col>
-          <Col sm='12' md='12' lg='5'>
+          <Col sm="12" md="12" lg="5">
             <DonationDetail donation={selectedDonation} />
           </Col>
         </Row>
@@ -28,4 +28,4 @@ const DonationPage = () => {
   );
 };
 
-export default DonationPage;
+export default DonatePage;

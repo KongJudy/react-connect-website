@@ -7,3 +7,4 @@ export const selectAllPosts = () => {
 export const selectRandomPost = () => {
   return POSTS[Math.floor(POSTS.length * Math.random())];
 };
+
