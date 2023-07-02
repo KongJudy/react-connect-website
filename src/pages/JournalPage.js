@@ -1,6 +1,7 @@
-import { Container } from 'reactstrap';
+import { Col, Container, Row } from 'reactstrap';
 import SubHeader from '../components/subheader/SubHeader';
 import JournalEntry from '../features/journal/JournalEntry';
+import JournalEntries from '../features/journal/JournalEntries';
 
 const JournalPage = () => {
   return (
@@ -9,7 +10,19 @@ const JournalPage = () => {
         <SubHeader current='journal' />
       </div>
       <Container>
-        <JournalEntry />
+        <Row className='mx-auto'>
+          <Col sm='12' md='6'>
+            <div>
+              <JournalEntries />
+            </div>
+          </Col>
+
+          <Col sm='12' md='6'>
+            <div>
+              <JournalEntry />
+            </div>
+          </Col>
+        </Row>
       </Container>
     </>
   );

@@ -1,14 +1,18 @@
+import { useDispatch } from 'react-redux';
+import { addEntry } from './journalSlice';
 import { useState } from 'react';
 import './journalEntry.css';
 
 const JournalEntry = () => {
   const [entry, setEntry] = useState('');
+  const dispatch = useDispatch();
 
   const handleEntryChange = (event) => {
     setEntry(event.target.value);
   };
 
   const handleSaveEntry = () => {
+    dispatch(addEntry(entry));
     console.log('Entry saved: ', entry);
   };
 

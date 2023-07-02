@@ -1,3 +1,4 @@
+import { createSlice } from '@reduxjs/toolkit';
 import { POSTS } from '../../app/shared/POSTS';
 
 export const selectAllPosts = () => {
@@ -7,4 +8,3 @@ export const selectAllPosts = () => {
 export const selectRandomPost = () => {
   return POSTS[Math.floor(POSTS.length * Math.random())];
 };
-
