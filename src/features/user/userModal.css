@@ -1,0 +1,66 @@
+.changeImg img {
+  position: absolute;
+  top: 4px;
+  left: 14px;
+  width: 70%;
+  height: 70%;
+}
+
+.customLoginModal {
+  background: rgb(237, 240, 229);
+  background: linear-gradient(
+    170deg,
+    rgba(237, 240, 229, 1) 22%,
+    rgba(241, 222, 183, 1) 50%,
+    rgba(179, 218, 208, 1) 74%,
+    rgba(26, 202, 158, 1) 100%
+  );
+  font-family: 'Caveat', cursive, sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  width: 26rem;
+  padding-bottom: 5px;
+  border-radius: 8%;
+  outline: 3px solid #1aca9e;
+  outline-offset: 4px;
+}
+
+.customLoginModal .modalHeader {
+  font-size: 2em !important;
+}
+
+.customLoginModal img {
+  width: 44px;
+}
+
+.customLoginModal span {
+  position: absolute;
+  margin-left: 10px;
+}
+
+.customLoginModal .submitBtn {
+  background-color: #1aca9e;
+  font-weight: bold;
+  box-shadow: -2px 1px 3px 1px rgba(0, 0, 0, 0.584);
+}
+
+/* hides second image */
+.nav-link .changeImg:nth-of-type(2) {
+  display: none;
+}
+
+.nav-link:hover .changeImg:nth-of-type(1) {
+  display: none;
+}
+
+.nav-link:hover .changeImg:nth-of-type(2) {
+  display: block;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  background-color: #1aca9e;
+}
