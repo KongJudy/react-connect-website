@@ -67,7 +67,7 @@ const UserModal = () => {
         </ModalHeader>
         <ModalBody>
           <Formik
-            initalValues={{
+            initialValues={{
               username: '',
               password: ''
             }}
