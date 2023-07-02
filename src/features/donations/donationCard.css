@@ -1,0 +1,52 @@
+.donateCard {
+  align-items: center;
+  width: 300px;
+  height: 160px;
+  border: none;
+}
+
+.donateCardImg {
+  width: 300px;
+  height: 160px;
+  padding: 1px 1px;
+  object-position: center;
+  object-fit: scale-down cover;
+  border-radius: 3px;
+  box-shadow: -3px 1px 4px 3px rgba(0, 0, 0, 0.222);
+}
+
+/* card for detailed card */
+
+.detailImg {
+  height: 26vh;
+  border-radius: 3px;
+  border-bottom: 2px solid #92929224;
+  padding: 1px;
+}
+
+.detailCard {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 0.9em;
+  box-shadow: -3px 1px 4px 3px rgba(0, 0, 0, 0.319);
+}
+
+.detail-footer {
+  text-align: center;
+  font-weight: bold;
+}
+
+.detail-footer a {
+  padding: 4px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1.4em;
+}
+.detail-footer a:hover {
+  text-shadow: 1px 1px 2px rgba(62, 62, 62, 0.645);
+  background-color: #2c2c2c13;
+}
+.donateAddress {
+  padding-top: 3px;
+  font-family: 'Caveat', cursive, sans-serif;
+  font-size: 1em;
+}
