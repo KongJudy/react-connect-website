@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #ede5d5;
+  height: 98px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-shadow: -2px 1px 3px 1px rgba(0, 0, 0, 0.584);
+}
+
+.brandName {
+  margin-bottom: 6px;
+  margin-left: 10px;
+}
+
+h1 {
+  color: #1aca9e;
+  font-family: 'Caveat', cursive, sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  text-shadow: 2px 1px 2px rgb(29, 110, 90);
+}
+
+.navbarLogo {
+  background-color: #fff;
+  position: absolute;
+  right: 25px;
+  top: 19px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30%;
+  outline: 4px solid #9a9a9a83;
+  outline-offset: 1px;
+  box-shadow: -2px 1px 3px 1px rgba(0, 0, 0, 0.584);
+}
+
+.navbarLogo:focus {
+  box-shadow: -2px 1px 3px 1px rgba(0, 0, 0, 0.584);
+}
+
+.navbarLogo:hover {
+  background-color: #1aca9e;
+}
+
+.navbarLogo img,
+.changeImg img {
+  position: absolute;
+  top: 4px;
+  left: 14px;
+  width: 70%;
+  height: 70%;
+}
+
+/* hides second image */
+.navbarLogo .changeImg:nth-of-type(2),
+.nav-link .changeImg:nth-of-type(2) {
+  display: none;
+}
+
+.navbarLogo:hover .changeImg:nth-of-type(1),
+.nav-link:hover .changeImg:nth-of-type(1) {
+  display: none;
+}
+
+.navbarLogo:hover .changeImg:nth-of-type(2),
+.nav-link:hover .changeImg:nth-of-type(2) {
+  display: block;
+}
+
+.navbarLogo:hover,
+.nav-link:hover {
+  cursor: pointer;
+}
+
+.nav {
+  margin-right: 90px;
+}
+.nav-link {
+  background-color: #ececec8a;
+  width: 40px;
+  height: 40px;
+  margin-left: 12px;
+  position: relative;
+  border-radius: 30%;
+  outline: 4px 4px solid #9a9a9a83;
+  outline-offset: 1px;
+  box-shadow: -2px 1px 3px 1px rgba(0, 0, 0, 0.584);
+}
+
+.nav-link:hover {
+  background-color: #1aca9e;
+}
+
+.nav-link img {
+  position: relative;
+  right: 10px;
+  bottom: 3px;
+  width: 28px;
+}
+
+/* sm viewport */
+@media screen and (max-width: 576px) {
+  h1 {
+    display: none;
+  }
+
+  .navbarLogo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-link {
+    width: 33px;
+    height: 33px;
+  }
+
+  .nav-link img {
+    width: 26px;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+  }
+
+  .nav {
+    margin-bottom: 18px;
+    margin-right: 60px;
+  }
+
+  .navbarLogo img {
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    width: 70%;
+    height: 70%;
+  }
+}
